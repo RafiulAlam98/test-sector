@@ -29,7 +29,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/sectors")
+    fetch("https://backend-olive-two.vercel.app/sectors")
       .then((res) => res.json())
       .then((data) => {
         setSectors(data);
@@ -47,7 +47,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     console.log(userInfo);
 
-    fetch("http://localhost:5000/users", {
+    fetch("https://backend-olive-two.vercel.app/users", {
       method: "POST",
       headers: {
         "content-type": "application/json",

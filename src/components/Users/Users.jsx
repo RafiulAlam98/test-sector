@@ -18,7 +18,7 @@ export default function Users() {
   };
 
   React.useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://backend-olive-two.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
